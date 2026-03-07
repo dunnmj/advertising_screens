@@ -185,7 +185,7 @@ CELERY_BEAT_SCHEDULE = {
         'task': 'room_schedules.tasks.build_schedule',
         'schedule': crontab(minute=1),
     },
-    'cleanup-schedule-daily': {
+    'room-cleanup-schedule-daily': {
         'task': 'room_schedules.tasks.cleanup_schedule',
         'schedule': crontab(minute=0, hour=0),
     },
