@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 UNFOLD = {
     "SITE_TITLE": "Display Screen Admin",
     "SITE_HEADER": "Display Screen Admin",
+    "DASHBOARD_CALLBACK": "advertising.admin.dashboard_callback",
     "SITE_URL": "/",
     "SHOW_HISTORY": True,
     "SHOW_VIEW_ON_SITE": True,
@@ -92,7 +93,7 @@ UNFOLD = {
             },
             {
                 "title": "Scheduling",
-                "separator": True,
+                "separator": False,
                 "items": [
                     {
                         "title": "Schedules",
@@ -109,6 +110,7 @@ UNFOLD = {
             {
                 "title": "Room Schedules",
                 "separator": True,
+                "collapsible": True,
                 "items": [
                     {
                         "title": "Venues",
@@ -125,6 +127,7 @@ UNFOLD = {
             {
                 "title": "Task Management",
                 "separator": True,
+                "collapsible": True,
                 "items": [
                     {
                         "title": "Periodic Tasks",
